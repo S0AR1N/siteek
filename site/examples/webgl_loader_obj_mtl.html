@@ -76,14 +76,14 @@
 
 				new MTLLoader( manager )
 					.setPath( 'models/obj/male02/' )
-					.load( 'teapot.mtl', function ( materials ) {
+					.load( 'male02.mtl', function ( materials ) {
 
 						materials.preload();
 
 						new OBJLoader( manager )
 							.setMaterials( materials )
 							.setPath( 'models/obj/male02/' )
-							.load( 'teapot.obj', function ( object ) {
+							.load( 'male02.obj', function ( object ) {
 
 								object.position.y = - 95;
 								scene.add( object );
